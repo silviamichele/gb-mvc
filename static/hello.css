@@ -1,0 +1,19 @@
+*{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.card{
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+button{
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+    border: 0;
+}

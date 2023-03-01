@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8"/>
+    <title>Hello world!</title>
+    <link type="text/css" rel="stylesheet"
+          href="{{ url_for('static', filename='hello.css')}}"/>
+</head>
+<body>
+    <h1>Olá, PLAYER 1! Bem-vindx!</h1>
+    <h2>SCORE = <span id="score">0</span></h2>
+    <div class="card">
+        <div class="card-image">
+            <img id="img" src="{{ card_url }}">
+        </div>
+        <div class="card-value">
+            <p id="value">{{ card_value }}</p>
+        </div>
+        <div class="card-title">
+            <p id="title">{{ card_name }}</p>
+        </div>
+        <div class="card-buttons">
+            <button id="btn" onclick="startGame()">Iniciar</button>
+            <div id="btn-2" style="display: none;">
+                <button onclick="checkBigger()">A proxima carta é maior!</button>
+                <button onclick="checkLess()">A proxima carta é menor!</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="{{ url_for('static', filename='config.js')}}"></script>
+</html>
